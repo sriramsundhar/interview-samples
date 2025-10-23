@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/sriramsundhar/interview-samples/compare/v1.0.1...v1.0.2) (2025-10-23)
+
+
+### Bug Fixes
+
+* add release ([779266d](https://github.com/sriramsundhar/interview-samples/commit/779266d870ff278ec9b8a9d1a1f1502d1028d48a))
+* test ([3ee70e8](https://github.com/sriramsundhar/interview-samples/commit/3ee70e88947d0b557b18a3f264c58eb342b80e37))
+
 ## [1.0.1](https://github.com/sriramsundhar/interviewSamples/compare/v1.0.0...v1.0.1) (2025-10-23)
 
 
