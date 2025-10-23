@@ -1,7 +1,7 @@
 {
   "name": "@sriramsundhar/interview-samples",
-  "verion": "1.0.0",
   "type": "module",
+  "version": "1.0.2",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
@@ -13,6 +13,5 @@
   },
   "dependencies": {
     "chai": "^6.2.0"
-  },
-  "version": "1.0.2"
+  }
 }
