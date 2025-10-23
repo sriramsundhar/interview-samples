@@ -1,5 +1,6 @@
-const { start } = require("repl")
+// simple program for paging around a pivot element in a circular way
 
+import { expect } from 'chai';
 const dbList = [73, 18, 52, 19, 42, 77, 60, 39, 20, 12, 16, 109, 3]
 
 const getPivotIndex = (dbList, pivotId) => {
@@ -21,7 +22,6 @@ const getIndexsBasedOnPageNoAndPageSize = (pivotIndex,pageSize,pageNumber, sizeO
 
   const startIndex = (pivotIndex + pageSize * pageNumber) 
   const endIndexExcluded = (pivotIndex + pageSize * pageNumber + pageSize)
-  //  console.log(`start: ${startIndex} end: ${endIndexExcluded}`)
   return {
     startIndex: startIndex % (sizeOfDbList ),
     endIndex: endIndexExcluded % (sizeOfDbList)
@@ -54,3 +54,8 @@ console.log(getPage(dbList, 42, 4,1))
 console.log(getPage(dbList, 42, 4,2))
 console.log(getPage(dbList, 42, 4,3))
 console.log(getPage(dbList, 42, 4,5))
+expect(getPage(dbList,42,4,0)).to.deep.equal([42,77,60,39])
+expect(getPage(dbList,42,4,1)).to.deep.equal([20,12,16,109])
+expect(getPage(dbList,42,4,2)).to.deep.equal([3,73,18,52])
+expect(getPage(dbList,42,4,3)).to.deep.equal([19])
+expect(getPage(dbList,42,4,4)).to.deep.equal([])
