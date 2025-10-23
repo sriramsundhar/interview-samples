@@ -64,3 +64,4 @@ jobs:
         run: cp $NPM_CONFIG_USERCONFIG .npmrc
       - name: semantic-release
         run: npm ci && npx semantic-release
+
